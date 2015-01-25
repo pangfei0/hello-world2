@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2015-1-23 22:08:30 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.ree.hibernate.RepEntFavouriteView" table="rep_ent_favourite_view" catalog="reh">
+        <composite-id name="id" class="com.ree.hibernate.RepEntFavouriteViewId">
+            <key-property name="userNo" type="int">
+                <column name="USER_NO" />
+            </key-property>
+            <key-property name="userUid" type="string">
+                <column name="USER_UID" length="20" />
+            </key-property>
+            <key-property name="userEmail" type="string">
+                <column name="USER_EMAIL" length="45" />
+            </key-property>
+            <key-property name="userName" type="string">
+                <column name="USER_NAME" length="45" />
+            </key-property>
+            <key-property name="userSex" type="string">
+                <column name="USER_SEX" length="4" />
+            </key-property>
+            <key-property name="userCert" type="string">
+                <column name="USER_CERT" length="18" />
+            </key-property>
+            <key-property name="userResidence" type="string">
+                <column name="USER_RESIDENCE" length="20" />
+            </key-property>
+            <key-property name="userAddrName" type="string">
+                <column name="USER_ADDR_NAME" length="40" />
+            </key-property>
+            <key-property name="userAddrPos" type="string">
+                <column name="USER_ADDR_POS" length="45" />
+            </key-property>
+            <key-property name="educationDictName" type="string">
+                <column name="EDUCATION_DICT_NAME" length="20" />
+            </key-property>
+            <key-property name="userIntention" type="string">
+                <column name="USER_INTENTION" length="20" />
+            </key-property>
+            <key-property name="userPhone" type="string">
+                <column name="USER_PHONE" length="20" />
+            </key-property>
+            <key-property name="userAge" type="java.lang.Integer">
+                <column name="USER_AGE" />
+            </key-property>
+            <key-property name="userSkill" type="string">
+                <column name="USER_SKILL" length="20" />
+            </key-property>
+            <key-property name="reserved01" type="string">
+                <column name="RESERVED01" length="45" />
+            </key-property>
+            <key-property name="reserved02" type="string">
+                <column name="RESERVED02" length="45" />
+            </key-property>
+            <key-property name="entName" type="string">
+                <column name="ENT_NAME" length="60" />
+            </key-property>
+            <key-property name="entNo" type="int">
+                <column name="ENT_NO" />
+            </key-property>
+            <key-property name="favouriteName" type="string">
+                <column name="favourite_name" length="45" />
+            </key-property>
+            <key-property name="favouriteType" type="string">
+                <column name="favourite_type" length="45" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

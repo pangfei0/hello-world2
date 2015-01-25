@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2015-1-23 22:08:30 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.ree.hibernate.RepEntFavourite" table="rep_ent_favourite" catalog="reh">
+        <composite-id name="id" class="com.ree.hibernate.RepEntFavouriteId">
+            <key-property name="userNo" type="int">
+                <column name="USER_NO" />
+            </key-property>
+            <key-property name="entNo" type="int">
+                <column name="ENT_NO" />
+            </key-property>
+        </composite-id>
+        <property name="submittime" type="timestamp">
+            <column name="SUBMITTIME" length="19">
+                <comment>&#204;&#225;&#189;&#187;&#202;&#177;&#188;&#228;</comment>
+            </column>
+        </property>
+        <property name="favouriteName" type="string">
+            <column name="FAVOURITE_NAME" length="45">
+                <comment>
+                &#202;&#213;&#178;&#216;&#188;&#208;&#195;&#251;&#179;&#198;-&#212;&#202;&#208;&#237;&#210;&#187;&#184;&#246;&#198;&#243;&#210;&#181;&#211;&#181;&#211;&#208;&#182;&#224;&#184;&#246;&#202;&#213;&#178;&#216;&#188;&#208;</comment>
+            </column>
+        </property>
+        <property name="favouriteType" type="string">
+            <column name="FAVOURITE_TYPE" length="45">
+                <comment>&#202;&#213;&#178;&#216;&#188;&#208;&#192;&#224;&#208;&#205;</comment>
+            </column>
+        </property>
+        <property name="reserved01" type="string">
+            <column name="RESERVED01" length="46" />
+        </property>
+    </class>
+</hibernate-mapping>

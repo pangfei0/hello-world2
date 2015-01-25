@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-12-13 23:22:18 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.ree.hibernate.RepAdminPm" table="rep_admin_pm" catalog="reh">
+        <id name="pmNo" type="int">
+            <column name="PM_NO" />
+            <generator class="assigned" />
+        </id>
+        <property name="pmTitle" type="string">
+            <column name="PM_TITLE" length="25">
+                <comment>&#182;&#204;&#208;&#197;&#177;&#234;&#204;&#226;</comment>
+            </column>
+        </property>
+        <property name="pmContent" type="string">
+            <column name="PM_CONTENT" length="65535">
+                <comment>&#182;&#204;&#208;&#197;&#196;&#218;&#200;&#221;</comment>
+            </column>
+        </property>
+        <property name="pmFNo" type="java.lang.Integer">
+            <column name="PM_F_NO">
+                <comment>&#183;&#162;&#208;&#197;&#200;&#203;&#208;&#242;&#186;&#197;</comment>
+            </column>
+        </property>
+        <property name="pmTNo" type="java.lang.Integer">
+            <column name="PM_T_NO">
+                <comment>&#202;&#213;&#208;&#197;&#200;&#203;&#208;&#242;&#186;&#197;</comment>
+            </column>
+        </property>
+        <property name="pmType" type="int">
+            <column name="PM_TYPE" not-null="true">
+                <comment>&#208;&#197;&#188;&#254;&#192;&#224;&#208;&#205;:E.G.&#185;&#220;&#192;&#237;&#212;&#177;-&#198;&#243;&#210;&#181;</comment>
+            </column>
+        </property>
+        <property name="pmState" type="int">
+            <column name="PM_STATE" not-null="true">
+                <comment>
+                &#208;&#197;&#188;&#254;&#215;&#180;&#204;&#172;:&#210;&#209;&#182;&#193;&#163;&#172;&#206;&#180;&#182;&#193;&#163;&#172;&#210;&#209;&#201;&#190;</comment>
+            </column>
+        </property>
+        <property name="reserved01" type="string">
+            <column name="RESERVED01" length="45" />
+        </property>
+    </class>
+</hibernate-mapping>

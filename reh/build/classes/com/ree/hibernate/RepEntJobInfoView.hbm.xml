@@ -1,0 +1,103 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2015-1-23 22:08:30 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.ree.hibernate.RepEntJobInfoView" table="rep_ent_job_info_view" catalog="reh">
+        <composite-id name="id" class="com.ree.hibernate.RepEntJobInfoViewId">
+            <key-property name="jobNo" type="int">
+                <column name="JOB_NO" />
+            </key-property>
+            <key-property name="jobName" type="string">
+                <column name="JOB_NAME" length="46" />
+            </key-property>
+            <key-property name="jobSex" type="string">
+                <column name="JOB_SEX" length="4" />
+            </key-property>
+            <key-property name="jobTypePriDictNo" type="java.lang.Integer">
+                <column name="JOB_TYPE_PRI_DICT_NO" />
+            </key-property>
+            <key-property name="jobTypePriName" type="string">
+                <column name="JOB_TYPE_PRI_NAME" length="20" />
+            </key-property>
+            <key-property name="jobIntentionDictNo" type="java.lang.Integer">
+                <column name="JOB_INTENTION_DICT_NO" />
+            </key-property>
+            <key-property name="jobIntentionDictName" type="string">
+                <column name="JOB_INTENTION_DICT_NAME" length="20" />
+            </key-property>
+            <key-property name="jobIntentionDictType" type="string">
+                <column name="JOB_INTENTION_DICT_TYPE" length="20" />
+            </key-property>
+            <key-property name="jobSalaryNo" type="int">
+                <column name="JOB_SALARY_NO" />
+            </key-property>
+            <key-property name="jobAddrPosNo" type="string">
+                <column name="JOB_ADDR_POS_NO" length="60" />
+            </key-property>
+            <key-property name="jobAddrPosName" type="string">
+                <column name="JOB_ADDR_POS_NAME" length="45" />
+            </key-property>
+            <key-property name="jobSalaryDictName" type="string">
+                <column name="JOB_SALARY_DICT_NAME" length="20" />
+            </key-property>
+            <key-property name="jobTypePos" type="int">
+                <column name="JOB_TYPE_POS" />
+            </key-property>
+            <key-property name="jobTypePosName" type="string">
+                <column name="JOB_TYPE_POS_NAME" length="2" />
+            </key-property>
+            <key-property name="educationDictNo" type="java.lang.Integer">
+                <column name="EDUCATION_DICT_NO" />
+            </key-property>
+            <key-property name="educationDictName" type="string">
+                <column name="EDUCATION_DICT_NAME" length="20" />
+            </key-property>
+            <key-property name="jobPnum" type="java.lang.Integer">
+                <column name="JOB_PNUM" />
+            </key-property>
+            <key-property name="jobExpDictNo" type="java.lang.Integer">
+                <column name="JOB_EXP_DICT_NO" />
+            </key-property>
+            <key-property name="jobExpDictName" type="string">
+                <column name="JOB_EXP_DICT_NAME" length="20" />
+            </key-property>
+            <key-property name="jobDecribe" type="string">
+                <column name="JOB_DECRIBE" length="65535" />
+            </key-property>
+            <key-property name="jobContactPhone" type="string">
+                <column name="JOB_CONTACT_PHONE" length="20" />
+            </key-property>
+            <key-property name="jobState" type="java.lang.Integer">
+                <column name="JOB_STATE" />
+            </key-property>
+            <key-property name="jobStateName" type="string">
+                <column name="JOB_STATE_NAME" length="3" />
+            </key-property>
+            <key-property name="jobStartTime" type="timestamp">
+                <column name="JOB_START_TIME" length="19" />
+            </key-property>
+            <key-property name="jobEndTime" type="timestamp">
+                <column name="JOB_END_TIME" length="19" />
+            </key-property>
+            <key-property name="jobSubmitTime" type="timestamp">
+                <column name="JOB_SUBMIT_TIME" length="19" />
+            </key-property>
+            <key-property name="reserved01" type="string">
+                <column name="RESERVED01" length="46" />
+            </key-property>
+            <key-property name="entNo" type="java.lang.Integer">
+                <column name="ENT_NO" />
+            </key-property>
+            <key-property name="entName" type="string">
+                <column name="ENT_NAME" length="60" />
+            </key-property>
+            <key-property name="jobAgeNo" type="java.lang.Integer">
+                <column name="JOB_AGE_NO" />
+            </key-property>
+            <key-property name="ageName" type="string">
+                <column name="AGE_NAME" length="45" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-12-13 23:22:18 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.ree.hibernate.RepAdminInfo" table="rep_admin_info" catalog="reh">
+        <id name="adminNo" type="java.lang.Integer">
+            <column name="ADMIN_NO" />
+            <generator class="identity" />
+        </id>
+        <property name="adminUid" type="string">
+            <column name="ADMIN_UID" length="20">
+                <comment>&#211;&#195;&#187;&#167;&#195;&#251;</comment>
+            </column>
+        </property>
+        <property name="adminPwd" type="string">
+            <column name="ADMIN_PWD" length="32">
+                <comment>&#211;&#195;&#187;&#167;&#195;&#220;&#194;&#235;</comment>
+            </column>
+        </property>
+        <property name="adminName" type="string">
+            <column name="ADMIN_NAME" length="45">
+                <comment>&#213;&#230;&#202;&#181;&#208;&#213;&#195;&#251;</comment>
+            </column>
+        </property>
+        <property name="adminType" type="java.lang.Integer">
+            <column name="ADMIN_TYPE">
+                <comment>
+                &#185;&#220;&#192;&#237;&#192;&#224;&#208;&#205;,0-&#207;&#181;&#205;&#179;&#185;&#220;&#192;&#237;&#212;&#177;,1-&#187;&#170;&#204;&#236;&#185;&#220;&#192;&#237;&#212;&#177;</comment>
+            </column>
+        </property>
+        <property name="adminList" type="string">
+            <column name="ADMIN_LIST" length="45">
+                <comment>&#185;&#220;&#192;&#237;&#212;&#177;&#200;&#168;&#207;&#222;&#177;&#237;</comment>
+            </column>
+        </property>
+        <property name="adminRange" type="string">
+            <column name="ADMIN_RANGE" length="45">
+                <comment>&#185;&#220;&#192;&#237;&#212;&#177;&#183;&#182;&#206;&#167;</comment>
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>

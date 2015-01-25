@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2015-1-23 22:08:30 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.ree.hibernate.RepUserProgram" table="rep_user_program" catalog="reh">
+        <id name="gid" type="java.lang.Integer">
+            <column name="GID" />
+            <generator class="identity" />
+        </id>
+        <property name="userno" type="int">
+            <column name="USERNO" not-null="true" />
+        </property>
+        <property name="pname" type="string">
+            <column name="PNAME" length="45" />
+        </property>
+        <property name="ptime" type="string">
+            <column name="PTIME" length="45" />
+        </property>
+        <property name="company" type="string">
+            <column name="COMPANY" length="45" />
+        </property>
+        <property name="proJobname" type="string">
+            <column name="PRO_JOBNAME" length="45" />
+        </property>
+        <property name="proDescribe" type="string">
+            <column name="PRO_DESCRIBE" length="45" />
+        </property>
+        <property name="pduty" type="string">
+            <column name="PDUTY" length="45" />
+        </property>
+        <property name="jobgain" type="string">
+            <column name="JOBGAIN" length="45" />
+        </property>
+    </class>
+</hibernate-mapping>

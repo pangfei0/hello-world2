@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-12-13 23:22:18 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.ree.hibernate.RepAdminEntScaleDict" table="rep_admin_ent_scale_dict" catalog="reh">
+        <id name="scaleNo" type="int">
+            <column name="SCALE_NO" />
+            <generator class="assigned" />
+        </id>
+        <property name="scaleName" type="string">
+            <column name="SCALE_NAME" length="45">
+                <comment>&#185;&#230;&#196;&#163;&#195;&#251;&#179;&#198;</comment>
+            </column>
+        </property>
+        <property name="reserved01" type="string">
+            <column name="RESERVED01" length="45" />
+        </property>
+    </class>
+</hibernate-mapping>

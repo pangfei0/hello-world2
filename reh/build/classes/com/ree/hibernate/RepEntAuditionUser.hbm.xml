@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2015-1-23 22:08:30 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.ree.hibernate.RepEntAuditionUser" table="rep_ent_audition_user" catalog="reh">
+        <composite-id name="id" class="com.ree.hibernate.RepEntAuditionUserId">
+            <key-property name="userNo" type="int">
+                <column name="USER_NO" />
+            </key-property>
+            <key-property name="jobNo" type="int">
+                <column name="JOB_NO" />
+            </key-property>
+        </composite-id>
+        <property name="auditionTime" type="timestamp">
+            <column name="AUDITION_TIME" length="19" not-null="true">
+                <comment>&#195;&#230;&#202;&#212;&#202;&#177;&#188;&#228;</comment>
+            </column>
+        </property>
+        <property name="auditionAddr" type="string">
+            <column name="AUDITION_ADDR" length="40" not-null="true">
+                <comment>&#195;&#230;&#202;&#212;&#181;&#216;&#181;&#227;</comment>
+            </column>
+        </property>
+        <property name="state" type="int">
+            <column name="STATE" not-null="true">
+                <comment>&#195;&#230;&#202;&#212;&#215;&#180;&#204;&#172;</comment>
+            </column>
+        </property>
+        <property name="submittime" type="timestamp">
+            <column name="SUBMITTIME" length="19" not-null="true">
+                <comment>&#204;&#225;&#189;&#187;&#202;&#177;&#188;&#228;</comment>
+            </column>
+        </property>
+        <property name="memo" type="string">
+            <column name="MEMO" length="40">
+                <comment>&#177;&#184;&#215;&#162;</comment>
+            </column>
+        </property>
+        <property name="reserved01" type="string">
+            <column name="RESERVED01" length="45" />
+        </property>
+    </class>
+</hibernate-mapping>
