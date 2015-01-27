@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+    	<!-- 连接池配置 -->
+		<property name="hibernate.connection.provider_class">org.hibernate.c3p0.internal.C3P0ConnectionProvider</property>
+		
+		<property name="connection.autoReconnect">true</property> 
+		<property name="connection.autoReconnectForPools">true</property> 
+		<property name="connection.is-connection-validation-required">true</property>
+		<property name="hibernate.c3p0.validate">true</property>
+
+		<property name="hibernate.c3p0.max_size">20</property>
+        <property name="hibernate.c3p0.min_size">5</property>
+        <property name="hibernate.c3p0.timeout">50</property>
+        <property name="hibernate.c3p0.max_statements">10</property>
+        <property name="hibernate.c3p0.idle_test_period">30</property>
+        <property name="hibernate.c3p0.acquire_increment">2</property>
+        
+        
+        <!-- <property name="hibernate.c3p0.validate">true</property>
+        <property name="hibernate.c3p0.idleConnectionTestPeriod">10</property>
+        <property name="hibernate.c3p0.maxIdleTime">12</property>
+        <property name="hibernate.c3p0.testConnectionOnCheckout">true</property> -->
+        
+        <property name="hibernate.bytecode.use_reflection_optimizer">false</property>
+        <property name="hibernate.connection.autoReconnect">true</property>
+        <property name="hibernate.connection.autoReconnectForPools">true</property>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.is-connection-validation-required">true</property>
+        <property name="hibernate.connection.password">reh*</property>
+        <property name="hibernate.connection.url">jdbc:mysql://10.20.8.129:3306/reh</property>
+        <property name="hibernate.connection.username">reh</property>
+        <property name="hibernate.current_session_context_class">thread</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL5InnoDBDialect</property>
+        <property name="hibernate.search.autoregister_listeners">false</property>
+        <property name="hibernate.show_sql">false</property>
+        <property name="hibernate.validator.apply_to_ddl">false</property>
+        <mapping resource="com/ree/hibernate/RepTrainNewsView.hbm.xml" />
+        <mapping resource="com/ree/hibernate/RepAdminJobTypePriDict.hbm.xml" />
+        <mapping resource="com/ree/hibernate/RepEntJobUser.hbm.xml" />
+        <mapping resource="com/ree/hibernate/RepAdminEntTradeDict.hbm.xml" />
+        <mapping resource="com/ree/hibernate/RepAdminCommunityInfo.hbm.xml" />
+        <mapping resource="com/ree/hibernate/RepEntAuditionUser.hbm.xml" />
+        <mapping resource="com/ree/hibernate/RepEntFavouriteView.hbm.xml" />
+        <mapping resource="com/ree/hibernate/RepAdminIntentAddrDict.hbm.xml" />
+        <mapping resource="com/ree/hibernate/RepAdminInfo.hbm.xml" />
+        <mapping resource="com/ree/hibernate/RepAdminJobSalaryDict.hbm.xml" />
+        <mapping resource="com/ree/hibernate/RepAdminJobExpDict.hbm.xml" />
+        <mapping resource="com/ree/hibernate/RepAdminScoreDict.hbm.xml" />
+        <mapping resource="com/ree/hibernate/RepTrainUserView.hbm.xml" />
+        <mapping resource="com/ree/hibernate/RepAdminPm.hbm.xml" />
+        <mapping resource="com/ree/hibernate/RepEntJobInfo.hbm.xml" />
+        <mapping resource="com/ree/hibernate/RepAdminList.hbm.xml" />
+        <mapping resource="com/ree/hibernate/RepEntInfoView.hbm.xml" />
+        <mapping resource="com/ree/hibernate/RepAdminFavouriteStateDict.hbm.xml" />
+        <mapping resource="com/ree/hibernate/RepAdminEntScaleDict.hbm.xml" />
+        <mapping resource="com/ree/hibernate/RepEntInfo.hbm.xml" />
+        <mapping resource="com/ree/hibernate/RepUserInfoView.hbm.xml" />
+        <mapping resource="com/ree/hibernate/RepAdminEntEconomyDict.hbm.xml" />
+        <mapping resource="com/ree/hibernate/RepAdminNews.hbm.xml" />
+        <mapping resource="com/ree/hibernate/RepUserInfo.hbm.xml" />
+        <mapping resource="com/ree/hibernate/RepEntJobUserView.hbm.xml" />
+        <mapping resource="com/ree/hibernate/RepEntBlacklistUser.hbm.xml" />
+        <mapping resource="com/ree/hibernate/RepEntTrainUser.hbm.xml" />
+        <mapping resource="com/ree/hibernate/RepAdminUserEducationDict.hbm.xml" />
+        <mapping resource="com/ree/hibernate/RepAdminSys.hbm.xml" />
+        <mapping resource="com/ree/hibernate/RepEntFavourite.hbm.xml" />
+        <mapping resource="com/ree/hibernate/RepAdminJobIntentionDict.hbm.xml" />
+        <mapping resource="com/ree/hibernate/RepAdminJobAgeDict.hbm.xml" />
+        <mapping resource="com/ree/hibernate/RepEntJobInfoView.hbm.xml" />
+    </session-factory>
+</hibernate-configuration>

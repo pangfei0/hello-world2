@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-12-13 23:22:18 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.ree.hibernate.RepAdminFavouriteStateDict" table="rep_admin_favourite_state_dict" catalog="reh">
+        <id name="state" type="int">
+            <column name="state" />
+            <generator class="assigned" />
+        </id>
+        <property name="stateName" type="string">
+            <column name="state_name" length="45" />
+        </property>
+    </class>
+</hibernate-mapping>

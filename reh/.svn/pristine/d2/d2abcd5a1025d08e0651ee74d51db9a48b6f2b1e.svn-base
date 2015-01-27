@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-12-13 23:22:18 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.ree.hibernate.RepAdminJobIntentionDict" table="rep_admin_job_intention_dict" catalog="reh">
+        <id name="jobIntentionDictNo" type="int">
+            <column name="JOB_INTENTION_DICT_NO" />
+            <generator class="assigned" />
+        </id>
+        <property name="jobIntentionDictName" type="string">
+            <column name="JOB_INTENTION_DICT_NAME" length="20" not-null="true">
+                <comment>&#199;&#243;&#214;&#176;&#210;&#226;&#207;&#242;&#195;&#251;&#179;&#198;</comment>
+            </column>
+        </property>
+        <property name="jobIntentionDictType" type="string">
+            <column name="JOB_INTENTION_DICT_TYPE" length="20" not-null="true">
+                <comment>&#199;&#243;&#214;&#176;&#210;&#226;&#207;&#242;&#192;&#224;&#208;&#205;</comment>
+            </column>
+        </property>
+        <property name="reserved01" type="string">
+            <column name="RESERVED01" length="45" />
+        </property>
+    </class>
+</hibernate-mapping>

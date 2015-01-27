@@ -1,0 +1,117 @@
+package com.reh.Regist;
+
+import java.util.Map;
+
+import com.opensymphony.xwork2.ActionContext;
+import com.opensymphony.xwork2.ActionSupport;
+import com.ree.common.DBHelper;
+import com.ree.hibernate.RepUserInfo;
+import com.ree.hibernate.RepUserInfoViewId;
+import com.reh.Regist.UserDao;
+
+public class PersonRegist2 extends ActionSupport{
+	/*
+	 *输入
+	 * 用户名： *  密       码： *  确认密码： *  姓       名： *  性       别： * 男：女： 邮       箱
+	 */
+	  private String  userName;
+	  private  String passWord;
+	  private  String passWord1;
+	  private String UID;
+	  private String sex;
+	  private String email;
+	  /*
+	   * 输出 
+	   */
+	  private String mes;
+	  private Boolean status;
+	
+	  
+	@Override
+	public String execute() throws Exception {
+		// TODO Auto-generated method stub
+		RepUserInfo userbean = new RepUserInfo();
+		UserDao uDao = new UserDao();
+		// userbean.setUserNo(dao1.GetTotalCount()+1);
+ 		userbean.setUserName(getUserName());
+		userbean.setUserUid(getUID());
+		userbean.setUserPwd(DBHelper.MD5(getPassWord()));
+		userbean.setUserEmail(getEmail());
+		userbean.setUserSex(getSex());
+		String message = uDao.AddUser_by_Bean(userbean);
+		if (message != null) {
+			this.setMes(message);
+			status=false;
+			return "error";
+			
+		} else {
+			this.setMes("注册成功！");
+			status=true;
+		  
+			
+			return "success";
+		}	
+	}
+
+	public String getUserName() {
+		return userName;
+	}
+
+	public void setUserName(String userName) {
+		this.userName = userName;
+	}
+
+	public String getPassWord() {
+		return passWord;
+	}
+
+	public void setPassWord(String passWord) {
+		this.passWord = passWord;
+	}
+
+	public String getSex() {
+		return sex;
+	}
+
+	public void setSex(String sex) {
+		this.sex = sex;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getMes() {
+		return mes;
+	}
+
+	public void setMes(String mes) {
+		this.mes = mes;
+	}
+
+	public Boolean getStatus() {
+		return status;
+	}
+
+	public void setStatus(Boolean status) {
+		this.status = status;
+	}
+	  public String getUID() {
+			return UID;
+		}
+		public void setUID(String uID) {
+			UID = uID;
+		}
+		
+		public String getPassWord1() {
+			return passWord1;
+		}
+		public void setPassWord1(String passWord1) {
+			this.passWord1 = passWord1;
+		}
+
+}

@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2015-1-23 22:08:30 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.ree.hibernate.RepEntJobUser" table="rep_ent_job_user" catalog="reh">
+        <composite-id name="id" class="com.ree.hibernate.RepEntJobUserId">
+            <key-property name="userNo" type="int">
+                <column name="USER_NO" />
+            </key-property>
+            <key-property name="jobNo" type="int">
+                <column name="JOB_NO" />
+            </key-property>
+        </composite-id>
+        <property name="state" type="int">
+            <column name="STATE" not-null="true">
+                <comment>
+                &#209;&#161;&#177;&#168;&#201;&#243;&#186;&#203;&#215;&#180;&#204;&#172;:&#181;&#165;&#209;&#161;*&#190;&#205;&#210;&#181;&#184;&#250;&#215;&#217;&#163;&#186;&#186;&#206;&#202;&#177;&#194;&#188;&#211;&#195;&#163;&#172;&#202;&#212;&#211;&#195;&#163;&#172;&#180;&#199;&#205;&#203;&#163;&#172;&#215;&#170;&#213;&#253;</comment>
+            </column>
+        </property>
+        <property name="submittime" type="timestamp">
+            <column name="SUBMITTIME" length="19" not-null="true">
+                <comment>&#204;&#225;&#189;&#187;&#202;&#177;&#188;&#228;</comment>
+            </column>
+        </property>
+        <property name="auditiontime" type="timestamp">
+            <column name="AUDITIONTIME" length="19">
+                <comment>&#195;&#230;&#202;&#212;&#202;&#177;&#188;&#228;</comment>
+            </column>
+        </property>
+        <property name="hiretime" type="timestamp">
+            <column name="HIRETIME" length="19">
+                <comment>&#194;&#188;&#211;&#195;&#202;&#177;&#188;&#228;</comment>
+            </column>
+        </property>
+        <property name="trytime" type="timestamp">
+            <column name="TRYTIME" length="19">
+                <comment>&#202;&#212;&#211;&#195;&#202;&#177;&#188;&#228;</comment>
+            </column>
+        </property>
+        <property name="dismisstime" type="timestamp">
+            <column name="DISMISSTIME" length="19">
+                <comment>&#180;&#199;&#205;&#203;&#202;&#177;&#188;&#228;</comment>
+            </column>
+        </property>
+        <property name="membertime" type="timestamp">
+            <column name="MEMBERTIME" length="19">
+                <comment>&#215;&#170;&#213;&#253;&#202;&#177;&#188;&#228;</comment>
+            </column>
+        </property>
+        <property name="contracttime" type="timestamp">
+            <column name="CONTRACTTIME" length="19">
+                <comment>&#199;&#169;&#182;&#169;&#186;&#207;&#205;&#172;&#202;&#177;&#188;&#228;</comment>
+            </column>
+        </property>
+        <property name="memo" type="string">
+            <column name="MEMO" length="40">
+                <comment>&#177;&#184;&#215;&#162;</comment>
+            </column>
+        </property>
+        <property name="reserved01" type="string">
+            <column name="RESERVED01" length="45" />
+        </property>
+    </class>
+</hibernate-mapping>

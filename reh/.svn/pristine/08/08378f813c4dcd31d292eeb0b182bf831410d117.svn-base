@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2015-1-23 22:08:30 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.ree.hibernate.RepTrainNewsView" table="rep_train_news_view" catalog="reh">
+        <composite-id name="id" class="com.ree.hibernate.RepTrainNewsViewId">
+            <key-property name="newsNo" type="int">
+                <column name="NEWS_NO" />
+            </key-property>
+            <key-property name="newsTitle" type="string">
+                <column name="NEWS_TITLE" length="80" />
+            </key-property>
+            <key-property name="newsContent" type="string">
+                <column name="NEWS_CONTENT" length="16777215" />
+            </key-property>
+            <key-property name="newsSubmittime" type="timestamp">
+                <column name="NEWS_SUBMITTIME" length="19" />
+            </key-property>
+            <key-property name="newsOrdertime" type="timestamp">
+                <column name="NEWS_ORDERTIME" length="19" />
+            </key-property>
+            <key-property name="newsAuthor" type="string">
+                <column name="NEWS_AUTHOR" length="25" />
+            </key-property>
+            <key-property name="newsListNo" type="int">
+                <column name="NEWS_LIST_NO" />
+            </key-property>
+            <key-property name="newsImgurl" type="string">
+                <column name="NEWS_IMGURL" length="65" />
+            </key-property>
+            <key-property name="newsTrainEndtime" type="timestamp">
+                <column name="NEWS_TRAIN_ENDTIME" length="19" />
+            </key-property>
+            <key-property name="reserved01" type="string">
+                <column name="RESERVED01" length="45" />
+            </key-property>
+            <key-property name="reserved02" type="string">
+                <column name="RESERVED02" length="45" />
+            </key-property>
+            <key-property name="userCount" type="long">
+                <column name="USER_COUNT" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

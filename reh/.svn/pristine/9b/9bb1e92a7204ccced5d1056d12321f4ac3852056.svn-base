@@ -1,0 +1,114 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-12-13 23:22:18 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.ree.hibernate.RepUserInfo" table="rep_user_info" catalog="reh">
+        <id name="userNo" type="java.lang.Integer">
+            <column name="USER_NO" />
+            <generator class="identity" />
+        </id>
+        <property name="userUid" type="string">
+            <column name="USER_UID" length="20" not-null="true" unique="true">
+                <comment>&#211;&#195;&#187;&#167;&#195;&#251;:&#191;&#201;&#181;&#199;&#194;&#189;</comment>
+            </column>
+        </property>
+        <property name="userPwd" type="string">
+            <column name="USER_PWD" length="32" not-null="true">
+                <comment>&#211;&#195;&#187;&#167;&#195;&#220;&#194;&#235;:MD5</comment>
+            </column>
+        </property>
+        <property name="userEmail" type="string">
+            <column name="USER_EMAIL" length="45" not-null="true">
+                <comment>&#211;&#202;&#188;&#254;&#181;&#216;&#214;&#183;:&#191;&#201;&#181;&#199;&#194;&#189;</comment>
+            </column>
+        </property>
+        <property name="userName" type="string">
+            <column name="USER_NAME" length="45">
+                <comment>&#213;&#230;&#202;&#181;&#208;&#213;&#195;&#251;</comment>
+            </column>
+        </property>
+        <property name="userSex" type="string">
+            <column name="USER_SEX" length="4">
+                <comment>&#211;&#195;&#187;&#167;&#208;&#212;&#177;&#240;</comment>
+            </column>
+        </property>
+        <property name="userCert" type="string">
+            <column name="USER_CERT" length="18">
+                <comment>&#211;&#195;&#187;&#167;&#214;&#164;&#188;&#254;&#186;&#197;:&#201;&#237;&#183;&#221;&#214;&#164;&#186;&#197;</comment>
+            </column>
+        </property>
+        <property name="userResidence" type="string">
+            <column name="USER_RESIDENCE" length="20">
+                <comment>&#211;&#195;&#187;&#167;&#187;&#167;&#188;&#174;</comment>
+            </column>
+        </property>
+        <property name="userAddrDisNo" type="java.lang.Integer">
+            <column name="USER_ADDR_DIS_NO">
+                <comment>&#203;&#249;&#202;&#244;&#189;&#214;&#181;&#192;&#208;&#242;&#186;&#197;-community</comment>
+            </column>
+        </property>
+        <property name="userAddrPos" type="string">
+            <column name="USER_ADDR_POS" length="45">
+                <comment>&#188;&#210;&#205;&#165;&#181;&#216;&#214;&#183;-&#207;&#234;&#207;&#184;</comment>
+            </column>
+        </property>
+        <property name="userIntentDisNo" type="string">
+            <column name="USER_INTENT_DIS_NO" length="45">
+                <comment>&#210;&#226;&#207;&#242;&#199;&#243;&#214;&#176;&#199;&#248;&#211;&#242;-intent</comment>
+            </column>
+        </property>
+        <property name="userEducationNo" type="java.lang.Integer">
+            <column name="USER_EDUCATION_NO">
+                <comment>&#209;&#167;&#192;&#250;</comment>
+            </column>
+        </property>
+        <property name="userExpNo" type="java.lang.Integer">
+            <column name="USER_EXP_NO">
+                <comment>&#185;&#164;&#215;&#247;&#190;&#173;&#192;&#250;</comment>
+            </column>
+        </property>
+        <property name="userIntentJobTypeNo" type="java.lang.Integer">
+            <column name="USER_INTENT_JOB_TYPE_NO">
+                <comment>&#211;&#195;&#187;&#167;&#198;&#218;&#205;&#251;&#214;&#176;&#210;&#181;&#192;&#224;&#208;&#205;-&#181;&#165;&#209;&#161;</comment>
+            </column>
+        </property>
+        <property name="userIntention" type="string">
+            <column name="USER_INTENTION" length="20">
+                <comment>
+                &#199;&#243;&#214;&#176;&#210;&#226;&#207;&#242;-&#208;&#208;&#210;&#181;:&#182;&#224;&#209;&#161;&#163;&#172;&#182;&#186;&#186;&#197;&#183;&#214;&#184;&#244;</comment>
+            </column>
+        </property>
+        <property name="userPhone" type="string">
+            <column name="USER_PHONE" length="20">
+                <comment>&#193;&#170;&#207;&#181;&#181;&#231;&#187;&#176;</comment>
+            </column>
+        </property>
+        <property name="userAge" type="java.lang.Integer">
+            <column name="USER_AGE">
+                <comment>&#196;&#234;&#193;&#228;</comment>
+            </column>
+        </property>
+        <property name="userBynow" type="string">
+            <column name="USER_BYNOW" length="200">
+                <comment>&#211;&#195;&#187;&#167;&#194;&#196;&#192;&#250;</comment>
+            </column>
+        </property>
+        <property name="userSkill" type="string">
+            <column name="USER_SKILL" length="20">
+                <comment>&#215;&#168;&#179;&#164;</comment>
+            </column>
+        </property>
+        <property name="userContent" type="string">
+            <column name="USER_CONTENT" length="65535">
+                <comment>&#215;&#212;&#206;&#210;&#188;&#242;&#189;&#233;</comment>
+            </column>
+        </property>
+        <property name="reserved01" type="string">
+            <column name="RESERVED01" length="45" />
+        </property>
+        <property name="reserved02" type="string">
+            <column name="RESERVED02" length="45" />
+        </property>
+    </class>
+</hibernate-mapping>

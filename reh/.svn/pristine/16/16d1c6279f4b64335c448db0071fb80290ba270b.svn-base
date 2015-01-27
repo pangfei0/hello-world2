@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.bytecode.use_reflection_optimizer">false</property>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.password">reh*</property>
+        <property name="hibernate.connection.url">jdbc:mysql://10.20.8.129:3306/reh</property>
+        <property name="hibernate.connection.username">reh</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="hibernate.search.autoregister_listeners">false</property>
+        <mapping resource="com/ree/hibernate/RepUserEdu.hbm.xml" />
+        <mapping resource="com/ree/hibernate/RepUserTrainExp.hbm.xml" />
+        <mapping resource="com/ree/hibernate/RepTrainNewsView.hbm.xml" />
+        <mapping resource="com/ree/hibernate/RepAdminJobTypePriDict.hbm.xml" />
+        <mapping resource="com/ree/hibernate/RepEntJobUser.hbm.xml" />
+        <mapping resource="com/ree/hibernate/RepAdminEntTradeDict.hbm.xml" />
+        <mapping resource="com/ree/hibernate/RepAdminCommunityInfo.hbm.xml" />
+        <mapping resource="com/ree/hibernate/RepUserResumeView.hbm.xml" />
+        <mapping resource="com/ree/hibernate/RepEntAuditionUser.hbm.xml" />
+        <mapping resource="com/ree/hibernate/RepEntFavouriteView.hbm.xml" />
+        <mapping resource="com/ree/hibernate/RepUserProgram.hbm.xml" />
+        <mapping resource="com/ree/hibernate/RepAdminIntentAddrDict.hbm.xml" />
+        <mapping resource="com/ree/hibernate/RepAdminInfo.hbm.xml" />
+        <mapping resource="com/ree/hibernate/RepAdminJobSalaryDict.hbm.xml" />
+        <mapping resource="com/ree/hibernate/RepUserCompany.hbm.xml" />
+        <mapping resource="com/ree/hibernate/RepAdminJobExpDict.hbm.xml" />
+        <mapping resource="com/ree/hibernate/RepAdminScoreDict.hbm.xml" />
+        <mapping resource="com/ree/hibernate/RepAdminProIntentionDict.hbm.xml" />
+        <mapping resource="com/ree/hibernate/RepUserSupple.hbm.xml" />
+        <mapping resource="com/ree/hibernate/RepTrainUserView.hbm.xml" />
+        <mapping resource="com/ree/hibernate/Test1.hbm.xml" />
+        <mapping resource="com/ree/hibernate/RepAdminPm.hbm.xml" />
+        <mapping resource="com/ree/hibernate/RepEntJobInfo.hbm.xml" />
+        <mapping resource="com/ree/hibernate/RepEntInfoView.hbm.xml" />
+        <mapping resource="com/ree/hibernate/RepAdminList.hbm.xml" />
+        <mapping resource="com/ree/hibernate/Test.hbm.xml" />
+        <mapping resource="com/ree/hibernate/RepAdminFavouriteStateDict.hbm.xml" />
+        <mapping resource="com/ree/hibernate/RepAdminEntScaleDict.hbm.xml" />
+        <mapping resource="com/ree/hibernate/RepEntInfo.hbm.xml" />
+        <mapping resource="com/ree/hibernate/RepUserInfoView.hbm.xml" />
+        <mapping resource="com/ree/hibernate/RepUserAble.hbm.xml" />
+        <mapping resource="com/ree/hibernate/RepAdminEntEconomyDict.hbm.xml" />
+        <mapping resource="com/ree/hibernate/RepAdminNews.hbm.xml" />
+        <mapping resource="com/ree/hibernate/RepUserInfo.hbm.xml" />
+        <mapping resource="com/ree/hibernate/RepEntJobUserView.hbm.xml" />
+        <mapping resource="com/ree/hibernate/RepEntBlacklistUser.hbm.xml" />
+        <mapping resource="com/ree/hibernate/RepEntTrainUser.hbm.xml" />
+        <mapping resource="com/ree/hibernate/RepAdminUserEducationDict.hbm.xml" />
+        <mapping resource="com/ree/hibernate/RepAdminSys.hbm.xml" />
+        <mapping resource="com/ree/hibernate/RepEntFavourite.hbm.xml" />
+        <mapping resource="com/ree/hibernate/RepAdminJobIntentionDict.hbm.xml" />
+        <mapping resource="com/ree/hibernate/RepAdminJobAgeDict.hbm.xml" />
+        <mapping resource="com/ree/hibernate/RepEntJobInfoView.hbm.xml" />
+    </session-factory>
+</hibernate-configuration>

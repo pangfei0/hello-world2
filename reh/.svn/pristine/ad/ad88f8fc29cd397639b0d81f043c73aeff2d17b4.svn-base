@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2015-1-23 22:08:30 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.ree.hibernate.RepAdminScoreDict" table="rep_admin_score_dict" catalog="reh">
+        <id name="ruleNo" type="int">
+            <column name="RULE_NO" />
+            <generator class="assigned" />
+        </id>
+        <property name="ruleName" type="string">
+            <column name="RULE_NAME" length="45">
+                <comment>&#185;&#230;&#212;&#242;&#195;&#251;</comment>
+            </column>
+        </property>
+        <property name="ruleScore" type="java.lang.Integer">
+            <column name="RULE_SCORE">
+                <comment>&#185;&#230;&#212;&#242;&#177;&#200;&#214;&#216;</comment>
+            </column>
+        </property>
+        <property name="ruleFor" type="java.lang.Integer">
+            <column name="RULE_FOR">
+                <comment>&#185;&#230;&#212;&#242;&#182;&#212;&#207;&#243;&#163;&#186;0-&#211;&#195;&#187;&#167;-1&#163;&#186;&#198;&#243;&#210;&#181;</comment>
+            </column>
+        </property>
+        <property name="reserved01" type="string">
+            <column name="RESERVED01" length="45" />
+        </property>
+    </class>
+</hibernate-mapping>

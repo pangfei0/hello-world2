@@ -1,0 +1,19 @@
+.ree-dialog{
+	width:auto;
+}
+.ree-dialog.ZebraDialog,.tree-dialog.ZebraDialog{
+	overflow-y: scroll;
+	max-height: 600px;
+}
+.ree-dialog div.ZebraDialog_Body.ZebraDialog_Icon.ZebraDialog_Information{padding: 20px;background-image: none;}
+.ree-dialog form div{
+	line-height: 27px;
+	font-size: 16px;
+	
+}
+.ree-dialog form div input,select{margin-left: 20px;}
+.tree-dialog div.ZebraDialog_Body.ZebraDialog_Icon.ZebraDialog_Information{padding: 10px;background-image: none;}
+.tree-dialog ul{
+	margin: 0 0 10px 25px;
+	padding: 0;
+}

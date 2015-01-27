@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2015-1-23 22:08:30 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.ree.hibernate.RepAdminJobTypePriDict" table="rep_admin_job_type_pri_dict" catalog="reh">
+        <id name="jobTypePriDictNo" type="java.lang.Integer">
+            <column name="JOB_TYPE_PRI_DICT_NO" />
+            <generator class="identity" />
+        </id>
+        <property name="jobTypePriDictType" type="string">
+            <column name="JOB_TYPE_PRI_DICT_TYPE" length="45" not-null="true">
+                <comment>&#184;&#184;&#189;&#218;&#181;&#227;</comment>
+            </column>
+        </property>
+        <property name="jobTypePriDictName" type="string">
+            <column name="JOB_TYPE_PRI_DICT_NAME" length="20" not-null="true">
+                <comment>&#215;&#211;&#189;&#218;&#181;&#227;</comment>
+            </column>
+        </property>
+        <property name="reserved01" type="string">
+            <column name="RESERVED01" length="45" />
+        </property>
+    </class>
+</hibernate-mapping>

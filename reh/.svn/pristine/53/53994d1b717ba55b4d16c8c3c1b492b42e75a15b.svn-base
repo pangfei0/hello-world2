@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-12-13 23:22:18 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.ree.hibernate.RepEntTrainUser" table="rep_ent_train_user" catalog="reh">
+        <id name="trainUserNo" type="java.lang.Integer">
+            <column name="TRAIN_USER_NO" />
+            <generator class="identity" />
+        </id>
+        <property name="userNo" type="int">
+            <column name="USER_NO" not-null="true">
+                <comment>&#211;&#195;&#187;&#167;&#208;&#242;&#186;&#197;</comment>
+            </column>
+        </property>
+        <property name="newsNo" type="int">
+            <column name="NEWS_NO" not-null="true">
+                <comment>&#208;&#194;&#206;&#197;&#208;&#242;&#186;&#197;&#163;&#168;&#197;&#224;&#209;&#181;&#208;&#242;&#186;&#197;&#163;&#169;</comment>
+            </column>
+        </property>
+        <property name="state" type="int">
+            <column name="STATE" not-null="true">
+                <comment>&#209;&#161;&#177;&#168;&#215;&#180;&#204;&#172;</comment>
+            </column>
+        </property>
+        <property name="submittime" type="timestamp">
+            <column name="SUBMITTIME" length="19" not-null="true">
+                <comment>&#204;&#225;&#189;&#187;&#202;&#177;&#188;&#228;</comment>
+            </column>
+        </property>
+        <property name="memo" type="string">
+            <column name="MEMO" length="40">
+                <comment>&#177;&#184;&#215;&#162;</comment>
+            </column>
+        </property>
+        <property name="reserved01" type="string">
+            <column name="RESERVED01" length="45" />
+        </property>
+    </class>
+</hibernate-mapping>
